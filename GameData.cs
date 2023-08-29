@@ -34,6 +34,7 @@ namespace GuessingGame_v4._2
             var csvConfig = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 Delimiter = ";",
+                HasHeaderRecord = true,
             };
             using var csv = new CsvReader(reader, csvConfig);
 
@@ -124,6 +125,7 @@ namespace GuessingGame_v4._2
             var csvConfig = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 Delimiter = ";",
+                HasHeaderRecord = true,
             };
             using var loadSaveGame = new CsvReader(reader, csvConfig);
             _loadSaveData = loadSaveGame.GetRecords<SaveDataModel>().ToList();
@@ -145,6 +147,7 @@ namespace GuessingGame_v4._2
             var csvConfig = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 Delimiter = ";",
+                HasHeaderRecord = true,
             };
             if (File.Exists(saveFilePath))
             {

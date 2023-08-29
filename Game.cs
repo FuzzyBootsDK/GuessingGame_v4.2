@@ -29,11 +29,10 @@ namespace GuessingGame_v4._2
         private int _NumberOfCorrectGuesses;
         private string _difficultyName;
         private int _difficultyLevel;
-        public int NumberOfCorrectGuesses { get => _NumberOfCorrectGuesses; }
+        private int _guessesLeftForNextLevel;
         public bool PlayAgain { get => _playAgain; }
         public string? UserName { get => _userName; }
         public string FilePath { get => _filePath; }
-
 
         public Game()
         {
@@ -57,6 +56,7 @@ namespace GuessingGame_v4._2
             _NumberOfCorrectGuesses = 0;
             _difficultyLevel = 0;
             _difficultyName = "";
+            _guessesLeftForNextLevel = 0;
         }
         public void WelcomePlayer()
         {
@@ -70,7 +70,7 @@ namespace GuessingGame_v4._2
             Console.WriteLine("When you are ready to start press any key!");
             Console.ReadKey();
         }
-        public void Play(int maxGuesses, string filePath, string userName, string category, string answer, string hint1, string hint2, int difficultyLevel, string difficultyName)
+        public void Play(int maxGuesses, string filePath, string userName, string category, string answer, string hint1, string hint2, int difficultyLevel, string difficultyName, int numberOfCorrectGuesses)
         {
             //set all the variables
             _maxGuesses = maxGuesses;
@@ -88,6 +88,8 @@ namespace GuessingGame_v4._2
             _firstLetterOfAnswer = _answer[0];
             _NumberOfCorrectGuesses = 0;
             _logGamePlay.WriteGuess("", "", _filePath);
+            _NumberOfCorrectGuesses = numberOfCorrectGuesses;
+            _guessesLeftForNextLevel = 5 - _NumberOfCorrectGuesses;
 
             _gameOver = false;
             _numGuesses = 0;
@@ -108,8 +110,10 @@ namespace GuessingGame_v4._2
                 }
                 Console.Clear();
                 logo();
+                Console.WriteLine($"{userName}");
                 Console.WriteLine("***************************************************************************************************************************");
                 Console.WriteLine($"You are playing at {difficultyLevel} - {difficultyName} difficulty");
+                Console.WriteLine($"You have {_guessesLeftForNextLevel} before the next level");
                 Console.WriteLine($"You have {_maxGuesses - _numGuesses} guesses left");
                 Console.WriteLine($"Your last guess was: {_guess}");
                 Console.WriteLine($"Hints recieved: {_hint1Recieved}  --  {_hint2Recieved}");
@@ -136,7 +140,6 @@ namespace GuessingGame_v4._2
                 Console.WriteLine("Press Y for Yes or N for No");
                 _playAgain = Console.ReadLine().ToUpper() == "Y" ? true : false;
                 Console.Clear();
-                _NumberOfCorrectGuesses += 1;
             }
             else if (_numGuesses >= _maxGuesses)
             {

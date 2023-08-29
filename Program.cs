@@ -7,6 +7,8 @@
             Game game = new();
             int numberOfCorrectGuesses = 0;
             int difficultyLevel = 0;
+            List<string> usedAnswers = new();
+            int numberOfUsedAnswers = 0;
 
             Console.Clear();
             Game.logo();
@@ -23,11 +25,21 @@
             GameData gameData = new(userName);
             while (game.PlayAgain == true)
             {
-                GameDataModel gameDataModel = gameData.Data[gameData.RamdomNumber];
+                if (numberOfCorrectGuesses == 5)
+                {
+                    usedAnswers.Clear();
+                }
+                while (gameData.RamdomNumber == 0 || usedAnswers.Contains(gameData.Data[gameData.RamdomNumber].Answer))
+                {
+                    gameData.CalculateDifficultyLevel(numberOfCorrectGuesses);
+                }
                 gameData.CalculateDifficultyLevel(numberOfCorrectGuesses);
+                GameDataModel gameDataModel = gameData.Data[gameData.RamdomNumber];
                 difficultyLevel = gameData.DifficultyLevel;
-                game.Play(maxGuesses, filePath, userName, gameDataModel.Category, gameDataModel.Answer, gameDataModel.Hint_1, gameDataModel.Hint_2, gameData.DifficultyLevel, gameData.DifficultyLevelName);
+                game.Play(maxGuesses, filePath, userName, gameDataModel.Category, gameDataModel.Answer, gameDataModel.Hint_1, gameDataModel.Hint_2, gameData.DifficultyLevel, gameData.DifficultyLevelName, numberOfCorrectGuesses);
                 numberOfCorrectGuesses += 1;
+                usedAnswers.Add(gameDataModel.Answer);
+                numberOfUsedAnswers += 1;
             }
             Console.WriteLine("Thanks for playing.");
             gameData.SaveGame(userName, difficultyLevel);

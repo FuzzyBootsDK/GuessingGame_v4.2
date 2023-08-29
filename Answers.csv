@@ -1,51 +1,301 @@
-﻿Index;Category;Answer;Hint_1;Hint_2
-1;Animal;Lion;"This animal is often called the ""king of the jungle"".";Known for its majestic appearance and loud roar.
-2;Animal;Elephant;It's the largest land animal.;It has a long trunk and big ears.
-3;Animal;Giraffe;This animal has a long neck.;It is the tallest land animal in the world.
-4;Animal;Tiger;A big Cat.;It has distinctive strips on its fur.
-5;Animal;Penguin;This is a flightless bird.;This flightless bird waddles on ice and is often associated with the Antarctic.
-6;Animal;Dolphin;This intelligent marine mammal.;Known for its playful behavior and communication skills.
-7;Animal;Panda;This bear is native to China.;It has distinct black and white fur, and is known for eating bamboo.
-8;Animal;Koala;This cute animal is native to Australia.;It loves to eat eucalyptus leaves, and spends most of its time in trees.
-9;Animal;Kangaroo;This marsupial from Australia.;It has powerful hind legs and uses them to hop around.
-10;Animal;Polar Bear;This bear is perfectly adapted to live in the Arctic.;It has a thick layer of blubber and white fur.
-11;Danish Cities;Copenhagen;"Home to the famous statue of ""The Little Mermaid.""";The capital city of Denmark.
-12;Danish Cities;Aarhus;Home to the ARoS Aarhus Art Museum.;Denmark's second-largest city.
-13;Danish Cities;Odense;Denmark's third-largest city.;The birthplace of renowned fairy tale writer Hans Christian Andersen.
-14;Danish Cities;Aalborg;Known for its historical architecture and vibrant nightlife.;Situated in the northern part of Jutland.
-15;Danish Cities;Esbjerg;A major seaport and the fifth-largest city in Denmark.;Located on the west coast of the Jutland peninsula.
-16;Danish Cities;Randers;he sixth-largest city in Denmark.;Features a Tropical Zoo, one of the largest artificial rainforest zoos in Northern Europe.
-17;Danish Cities;Kolding;A city with a historical castle overlooking a fjord.;Known for its modern design and architecture, including the Koldinghus castle.
-18;Danish Cities;Vejle;Located on the east coast of the Jutland peninsula.;Features the Vejle Fjord and is known for its scenic landscapes.
-19;Danish Cities;Roskilde;A city with a rich Viking history.;Famous for the Roskilde Cathedral, a UNESCO World Heritage Site.
-20;Danish Cities;Helsingør;Situated at the narrowest point of the Øresund strait.;"Known for Kronborg Castle, which inspired Shakespeare's ""Hamlet."""
-21;European Capitals;Paris;"Known as the ""City of Light.""";Eiffel Tower is one of its most iconic landmarks.
-22;European Capitals;London;The River Thames flows through this city.;Home to Buckingham Palace and Big Ben.
-23;European Capitals;Rome;Colosseum and Vatican City are major attractions here.;Capital of Italy and center of the Roman Empire.
-24;European Capitals;Berlin;The Brandenburg Gate is an important historical landmark.;This city was divided by a famous wall during the Cold War.
-25;European Capitals;Madrid;Home to the Prado Museum, which houses famous artworks.;The capital of Spain.
-26;European Capitals;Athens;Considered the cradle of Western civilization.;The Acropolis and Parthenon are situated here.
-27;European Capitals;Vienna;The Danube River flows through this city.;The capital of Austria and known for its classical music heritage.
-28;European Capitals;Lisbon;This city is situated on the Atlantic Ocean.;The capital of Portugal.
-29;European Capitals;Budapest;Buda Castle and Chain Bridge are prominent landmarks.;The capital of Hungary, known for its thermal baths.
-30;European Capitals;Stockholm;The Vasa Museum showcases a well-preserved warship from the 17th century.;The capital of Sweden, spread across numerous islands.
-31;American States;California;Known for its sunny weather and beautiful beaches.;Home to cities like Los Angeles, San Francisco, and Hollywood.
-32;American States;Texas;The second-largest state in the U.S. by both area and population.;Famous for its cowboy culture and BBQ food.
-33;American States;New York;"Home to the ""Big Apple"" and the Statue of Liberty.";The Empire State Building is a well-known landmark in this state.
-34;American States;Florida;"Known as the ""Sunshine State"" with warm weather and theme parks.";Miami and Orlando are popular cities located in this state.
-35;American States;Alaska;The largest state in the U.S. by area, known for its rugged landscapes.;Denali (formerly Mount McKinley) is the highest peak in North America, located in this state.
-36;American States;Hawaii;Comprised of a group of volcanic islands in the Pacific Ocean.;Known for its beautiful beaches, hula dance, and surfing culture.
-37;American States;Illinois;Home to the city of Chicago, known for its deep-dish pizza and architecture.;The state where Abraham Lincoln lived before becoming president.
-38;American States;Colorado;Known for its Rocky Mountains and outdoor recreational activities.;Denver is the state capital and a major city in this state.
-39;American States;Louisiana;Famous for its vibrant culture, jazz music, and Mardi Gras celebrations.;New Orleans is a well-known city located in this state.
-40;American States;Nevada;This state has vast desert landscapes, including parts of the Mojave Desert.;Home to Las Vegas, known for its casinos and entertainment.
-41;Country;United States;Home to the Statue of Liberty and Hollywood.;Its capital is Washington, D.C., and it has 50 states.
-42;Country;United Kingdom;Consists of England, Scotland, Wales, and Northern Ireland.;London is its capital, and it is known for the Royal Family and Big Ben.
-43;Country;Japan;Famous for sushi, samurai, and cherry blossoms.;Tokyo is its capital, and it is an island nation in East Asia.
-44;Country;Australia;Known for the Sydney Opera House and the Great Barrier Reef.;Kangaroos and koalas are some of its unique wildlife.
-45;Country;France;Famous for the Eiffel Tower and the Louvre Museum.;Paris is its capital, and it is renowned for its cuisine and art.
-46;Country;Brazil;Home to the Amazon Rainforest and Carnival festival.;Brasília is its capital, and it is the largest country in South America.
-47;Country;Germany;Known for Oktoberfest and the Berlin Wall.;Berlin is its capital, and it is famous for its engineering and technology.
-48;Country;India;Taj Mahal is located in this country.;New Delhi is its capital, and it is known for its diverse culture and cuisine.
-49;Country;Egypt;Home to the Pyramids of Giza and the Sphinx.;Cairo is its capital, and it is situated in northeastern Africa.
-50;Country;Canada;Known for its vast wilderness and maple syrup.;Ottawa is its capital, and it shares the longest border with the United States.
+Index;Category;Answer;Hint_1;Hint_2
+1;Countries;United States;North American nation;Capital is Washington, D.C.
+2;Countries;China;Asian country;World's most populous nation
+3;Countries;India;South Asian country;Known for its diverse culture
+4;Countries;Brazil;South American nation;Famous for the Amazon Rainforest
+5;Countries;Russia;Eurasian country;Largest land area in the world
+6;Countries;Australia;Oceania country;Home to the Great Barrier Reef
+7;Countries;Canada;North American nation;Second-largest country by area
+8;Countries;Mexico;North American nation;Famous for its cuisine and culture
+9;Countries;Japan;East Asian country;Known for technological advancements
+10;Countries;South Korea;East Asian nation;K-pop music and advanced technology
+11;Countries;Germany;European nation;Known for its engineering and efficiency
+12;Countries;France;Western European country;Famous for art, fashion, and cuisine
+13;Countries;United Kingdom;European nation;Consists of England, Scotland, Wales, and Northern Ireland
+14;Countries;Italy;Southern European country;Home to historical landmarks
+15;Countries;Spain;European nation;Known for its vibrant culture and festivals
+16;Countries;Argentina;South American nation;Famous for tango dance and beef consumption
+17;Countries;Egypt;North African nation;Home to the pyramids and ancient history
+18;Countries;South Africa;African country;Known for its diverse landscapes and wildlife
+19;Countries;Nigeria;West African nation;Most populous country in Africa
+20;Countries;Saudi Arabia;Middle Eastern nation;Major exporter of oil
+21;Countries;Turkey;Transcontinental country;Historic link between Asia and Europe
+22;Countries;Iran;Middle Eastern nation;Rich cultural heritage and history
+23;Countries;Vietnam;Southeast Asian country;Famous for its cuisine and history
+24;Countries;Thailand;Southeast Asian nation;Known for its beautiful beaches and temples
+25;Countries;Pakistan;South Asian nation;Home to the world's second-highest mountain, K2
+26;Countries;Indonesia;Southeast Asian country;Archipelago with diverse cultures
+27;Countries;Philippines;Southeast Asian nation;Comprises thousands of islands
+28;Countries;Bangladesh;South Asian nation;Most densely populated country
+29;Countries;Netherlands;Western European country;Known for its windmills and tulips
+30;Countries;Switzerland;European nation;Famous for its neutrality and alpine landscapes
+31;Countries;Sweden;Northern European country;High standard of living and welfare
+32;Countries;Belgium;Western European nation;Famous for chocolate and waffles
+33;Countries;Austria;Central European country;Known for classical music and Alps
+34;Countries;Norway;Northern European nation;Famous for fjords and northern lights
+35;Countries;Denmark;Nordic country;"Home to the concept of ""hygge"""
+36;Countries;Greece;Southern European nation;Birthplace of Western civilization
+37;Countries;Singapore;Southeast Asian nation;Highly developed city-state
+38;Countries;Malaysia;Southeast Asian country;Diverse mix of cultures and cuisine
+39;Countries;Israel;Middle Eastern nation;Holy land for multiple religions
+40;Countries;Ireland;European country;Known for its lush green landscapes and folklore
+41;Plants;Rose;Famous romantic flower;Comes in various colors
+42;Plants;Tulip;Symbol of the Netherlands;Known for vibrant spring blooms
+43;Plants;Sunflower;Follows the sun's movement;Produces edible seeds
+44;Plants;Orchid;Exotic and diverse flower family;Commonly used in perfumes
+45;Plants;Daisy;Simple and classic wildflower;Petal shape resembles a round button
+46;Plants;Lavender;Fragrant herb used in aromatherapy;Has purple flowers on spikes
+47;Plants;Lily;Elegant and often used in bouquets;Blossoms in a variety of colors
+48;Plants;Jasmine;Fragrant climbing plant;Popular for its sweet-scented flowers
+49;Plants;Marigold;Bright and easy-to-grow flower;Used in traditional ceremonies
+50;Plants;Peony;Large and showy bloom;Associated with romance and prosperity
+51;Plants;Carnation;Clove-scented flower;Comes in a wide range of colors
+52;Plants;Daffodil;Yellow spring flower;Symbolizes rebirth and new beginnings
+53;Plants;Hyacinth;Spring-blooming bulbous plant;Known for its strong fragrance
+54;Plants;Poinsettia;Vibrant red and green foliage;Associated with Christmas
+55;Plants;Cactus;Adapted to arid climates;Known for its water-storing capabilities
+56;Plants;Fern;Non-flowering vascular plant;Thrives in damp and shady areas
+57;Plants;Ivy;Climbing or ground-covering plant;Common in gardens and landscapes
+58;Plants;Bamboo;Fast-growing woody grass;Used for various purposes, including construction
+59;Plants;Oak Tree;Large deciduous tree;Produces acorns and provides habitat
+60;Plants;Maple Tree;Known for colorful autumn leaves;Symbol of Canada
+61;Plants;Pine Tree;Evergreen coniferous tree;Produces pine cones and needles
+62;Plants;Palm Tree;Tropical tree with distinctive leaves;Associated with beach landscapes
+63;Plants;Venus Flytrap;Carnivorous plant that catches insects;Native to North Carolina
+64;Plants;Aloe Vera;Succulent with medicinal properties;Used for skin care and healing
+65;Plants;Basil;Aromatic herb used in cooking;Common in Italian cuisine
+66;Plants;Mint;Fragrant herb with cooling taste;Used in teas, desserts, and more
+67;Plants;Rosemary;Woody herb with aromatic leaves;Used in Mediterranean dishes
+68;Plants;Lavender;Fragrant herb used in aromatherapy;Has purple flowers on spikes
+69;Plants;Bamboo;Fast-growing woody grass;Used for various purposes, including construction
+70;Plants;Fern;Non-flowering vascular plant;Thrives in damp and shady areas
+71;Plants;Ivy;Climbing or ground-covering plant;Common in gardens and landscapes
+72;Plants;Aloe Vera;Succulent with medicinal properties;Used for skin care and healing
+73;Plants;Venus Flytrap;Carnivorous plant that catches insects;Native to North Carolina
+74;Plants;Maple Tree;Known for colorful autumn leaves;Symbol of Canada
+75;Plants;Pine Tree;Evergreen coniferous tree;Produces pine cones and needles
+76;Plants;Palm Tree;Tropical tree with distinctive leaves;Associated with beach landscapes
+77;Herbs and Spices;Basil;Aromatic herb;Used in Italian cuisine
+78;Herbs and Spices;Thyme;Fragrant herb;Common in Mediterranean dishes
+79;Herbs and Spices;Rosemary;Woody herb;Has needle-like leaves
+80;Herbs and Spices;Oregano;Pungent herb;Frequently used in pizza sauce
+81;Herbs and Spices;Cilantro;Leafy herb;Popular in Latin and Asian cuisines
+82;Herbs and Spices;Mint;Cooling herb;Used in teas and desserts
+83;Herbs and Spices;Parsley;Fresh herb;Garnish and flavor enhancer
+84;Herbs and Spices;Dill;Fern-like herb;Pairs well with fish and pickles
+85;Herbs and Spices;Sage;Savory herb;Common in Thanksgiving stuffing
+86;Herbs and Spices;Chives;Onion-flavored herb;Often used as a garnish
+87;Herbs and Spices;Cumin;Spice;Adds earthy and nutty flavor
+88;Herbs and Spices;Coriander;Seed and leaf;Used in various global cuisines
+89;Herbs and Spices;Turmeric;Vibrant spice;Known for its anti-inflammatory properties
+90;Herbs and Spices;Ginger;Root spice;Adds warmth and depth to dishes
+91;Herbs and Spices;Cinnamon;Sweet spice;Used in both sweet and savory dishes
+92;Herbs and Spices;Cloves;Aromatic spice;Strong and pungent flavor
+93;Herbs and Spices;Nutmeg;Warm spice;Common in baking and beverages
+94;Herbs and Spices;Cardamom;Exotic spice;Adds a fragrant and citrusy note
+95;Herbs and Spices;Fenugreek;Legume spice;Used in Indian and Middle Eastern cuisines
+96;Herbs and Spices;Saffron;Expensive spice;Adds rich color and flavor
+97;Herbs and Spices;Paprika;Red spice;Ranges from mild to hot varieties
+98;Herbs and Spices;Chili Pepper;Hot spice;Adds heat to various dishes
+99;Herbs and Spices;Black Pepper;Common spice;Widely used for seasoning
+100;Herbs and Spices;White Pepper;Peppercorn spice;Has milder flavor than black pepper
+101;Herbs and Spices;Mustard Seeds;Small seeds;Used in pickling and condiments
+102;Herbs and Spices;Fennel;Licorice-flavored herb;Both bulb and seeds are used
+103;Herbs and Spices;Anise;Sweet and aromatic spice;Similar to fennel and licorice
+104;Herbs and Spices;Caraway;Seed spice;Common in European and Middle Eastern cuisines
+105;Herbs and Spices;Celery Seeds;Small seeds;Used for flavoring and pickling
+106;Herbs and Spices;Bay Leaf;Aromatic leaf;Adds depth to soups and stews
+107;Herbs and Spices;Lemongrass;Citrusy herb;Common in Asian cooking
+108;Herbs and Spices;Curry Leaves;Aromatic leaves;Used in Indian and Sri Lankan cuisines
+109;Herbs and Spices;Chervil;Delicate herb;Similar to parsley and anise
+110;Herbs and Spices;Lovage;Strong-flavored herb;Used in soups and stews
+111;Herbs and Spices;Tarragon;Aromatic herb;Adds a distinct flavor to dishes
+112;Herbs and Spices;Mace;Spice;Similar to nutmeg but milder in flavor
+113;Herbs and Spices;Allspice;Pungent spice;Tastes like a combination of cinnamon, cloves, and nutmeg
+114;Herbs and Spices;Juniper Berry;Berry spice;Used in flavoring gin and some dishes
+115;Herbs and Spices;Vanilla;Flavoring spice;Derived from orchid beans
+116;Herbs and Spices;Asafoetida;Resin spice;Common in Indian and vegetarian dishes
+117;Herbs and Spices;Epazote;Herb;Used in Mexican and Central American cooking
+118;American States;Alabama;Located in the southeastern U.S.;Known for its rich civil rights history
+119;American States;Alaska;Located in the far northwest;Known for its vast wilderness and wildlife
+120;American States;Arizona;Located in the southwestern U.S.;Famous for the Grand Canyon
+121;American States;Arkansas;Located in the southern U.S.;"Has the nickname ""The Natural State"""
+122;American States;California;Located on the West Coast;Known for Hollywood and Silicon Valley
+123;American States;Colorado;Located in the Rocky Mountains;Famous for its outdoor recreational opportunities
+124;American States;Connecticut;Located in the northeastern U.S.;Has a strong colonial history
+125;American States;Delaware;Located on the East Coast;Known for its tax-free shopping
+126;American States;Florida;Located in the southeastern U.S.;Famous for its beaches and theme parks
+127;American States;Georgia;Located in the southeastern U.S.;Known for its peaches and historic sites
+128;American States;Hawaii;Located in the Pacific Ocean;Known for its tropical beauty and culture
+129;American States;Idaho;Located in the northwestern U.S.;Known for its potatoes
+130;American States;Illinois;Located in the Midwest;Home to Chicago, a major U.S. city
+131;American States;Indiana;Located in the Midwest;Known for the Indianapolis 500 race
+132;American States;Iowa;Located in the Midwest;Known for its agricultural production
+133;American States;Kansas;Located in the central U.S.;Has a history tied to the Wild West
+134;American States;Kentucky;Located in the southeastern U.S.;Famous for bourbon and horse racing
+135;American States;Louisiana;Located in the southern U.S.;Known for its vibrant Creole culture
+136;American States;Maine;Located in the northeastern U.S.;Known for its rugged coastline
+137;American States;Maryland;Located on the East Coast;Home to the U.S. Naval Academy
+138;American States;Massachusetts;Located in the northeastern U.S.;Pilgrims settled in this state
+139;American States;Michigan;Located in the Midwest;Known for the Great Lakes
+140;American States;Minnesota;Located in the Midwest;Known for its lakes and outdoor activities
+141;American States;Mississippi;Located in the southern U.S.;Named after the Mississippi River
+142;American States;Missouri;Located in the central U.S.;Has both urban and rural areas
+143;American States;Montana;Located in the northwestern U.S.;Known for its stunning landscapes
+144;American States;Nebraska;Located in the central U.S.;Famous for its flat plains
+145;American States;Nevada;Located in the western U.S.;Home to Las Vegas
+146;American States;New Hampshire;Located in the northeastern U.S.;"Known for its motto ""Live Free or Die"""
+147;American States;New Jersey;Located on the East Coast;Has a diverse range of communities
+148;American States;New Mexico;Located in the southwestern U.S.;Known for its rich Native American heritage
+149;American States;New York;Located in the northeastern U.S.;Home to New York City
+150;American States;North Carolina;Located in the southeastern U.S.;Known for its coastal beauty
+151;American States;North Dakota;Located in the northern U.S.;Known for its cold winters
+152;American States;Ohio;Located in the Midwest;Has a strong industrial history
+153;American States;Oklahoma;Located in the central U.S.;Known for its Native American cultures
+154;American States;Oregon;Located on the West Coast;Famous for its natural beauty
+155;American States;Pennsylvania;Located in the northeastern U.S.;Has a significant role in U.S. history
+156;American States;Rhode Island;Located in the northeastern U.S.;Smallest U.S. state in terms of area
+157;U.S. Presidents;George Washington;First President of the United States;Commander-in-Chief during the American Revolutionary War
+158;U.S. Presidents;John Adams;Second President of the United States;Founding Father and signer of the Declaration of Independence
+159;U.S. Presidents;Thomas Jefferson;Third President of the United States;Author of the Declaration of Independence
+160;U.S. Presidents;James Madison;Fourth President of the United States;Father of the Constitution
+161;U.S. Presidents;James Monroe;Fifth President of the United States;Known for the Monroe Doctrine
+162;U.S. Presidents;John Quincy Adams;Sixth President of the United States;Son of John Adams, also a diplomat and senator
+163;U.S. Presidents;Andrew Jackson;Seventh President of the United States;Known for his populist policies and Indian Removal Act
+164;U.S. Presidents;Martin Van Buren;Eighth President of the United States;First president born as a U.S. citizen
+165;U.S. Presidents;William Henry Harrison;Ninth President of the United States;Shortest presidency, lasting 31 days
+166;U.S. Presidents;John Tyler;Tenth President of the United States;First president to succeed due to the death of a predecessor
+167;U.S. Presidents;James K. Polk;Eleventh President of the United States;Known for expanding U.S. territory during his presidency
+168;U.S. Presidents;Zachary Taylor;Twelfth President of the United States;Famous as a military leader in the Mexican-American War
+169;U.S. Presidents;Millard Fillmore;Thirteenth President of the United States;Signed the Compromise of 1850
+170;U.S. Presidents;Franklin Pierce;Fourteenth President of the United States;Signed the Kansas-Nebraska Act
+171;U.S. Presidents;James Buchanan;Fifteenth President of the United States;Served before the Civil War, often ranked poorly by historians
+172;U.S. Presidents;Abraham Lincoln;Sixteenth President of the United States;Led the country during the Civil War and abolished slavery
+173;U.S. Presidents;Andrew Johnson;Seventeenth President of the United States;First president to be impeached by the House of Representatives
+174;U.S. Presidents;Ulysses S. Grant;Eighteenth President of the United States;Led Union forces to victory in the Civil War
+175;U.S. Presidents;Rutherford B. Hayes;Nineteenth President of the United States;Ended Reconstruction and removed federal troops from the South
+176;U.S. Presidents;James A. Garfield;Twentieth President of the United States;Assassinated after only a few months in office
+177;U.S. Presidents;Chester A. Arthur;Twenty-First President of the United States;Succeeded Garfield after his assassination
+178;U.S. Presidents;Grover Cleveland;Twenty-Second and Twenty-Fourth President of the United States;Only president to serve non-consecutive terms
+179;U.S. Presidents;Benjamin Harrison;Twenty-Third President of the United States;Grandson of President William Henry Harrison
+180;U.S. Presidents;Grover Cleveland;Twenty-Second and Twenty-Fourth President of the United States;Only president to serve non-consecutive terms
+181;U.S. Presidents;William McKinley;Twenty-Fifth President of the United States;Assassinated during his second term in office
+182;U.S. Presidents;Theodore Roosevelt;Twenty-Sixth President of the United States;Known for progressive policies and trust-busting
+183;U.S. Presidents;William Howard Taft;Twenty-Seventh President of the United States;Later served as Chief Justice of the Supreme Court
+184;U.S. Presidents;Woodrow Wilson;Twenty-Eighth President of the United States;Led the country during World War I and advocated for the League of Nations
+185;U.S. Presidents;Warren G. Harding;Twenty-Ninth President of the United States;Presidency marked by corruption scandals
+186;U.S. Presidents;Calvin Coolidge;Thirtieth President of the United States;Known for his laissez-faire approach to government
+187;U.S. Presidents;Herbert Hoover;Thirty-First President of the United States;Served during the Great Depression
+188;U.S. Presidents;Franklin D. Roosevelt;Thirty-Second President of the United States;Longest-serving president, led the country through the Great Depression and World War II
+189;U.S. Presidents;Harry S. Truman;Thirty-Third President of the United States;Dropped atomic bombs on Japan to end World War II
+190;U.S. Presidents;Dwight D. Eisenhower;Thirty-Fourth President of the United States;Supreme Allied Commander in Europe during World War II
+191;U.S. Presidents;John F. Kennedy;Thirty-Fifth President of the United States;Assassinated in 1963, known for the Cuban Missile Crisis
+192;U.S. Presidents;Lyndon B. Johnson;Thirty-Sixth President of the United States;Signed the Civil Rights Act into law
+193;U.S. Presidents;Richard Nixon;Thirty-Seventh President of the United States;First president to resign from office
+194;U.S. Presidents;Gerald Ford;Thirty-Eighth President of the United States;Pardoned Richard Nixon after taking office
+195;U.S. Presidents;Jimmy Carter;Thirty-Ninth President of the United States;Focused on human rights and energy policy
+196;U.S. Presidents;Ronald Reagan;Fortieth President of the United States;Known for conservative policies and ending the Cold War
+197;European Cities;Paris;Capital of France;Known for the Eiffel Tower
+198;European Cities;Rome;Capital of Italy;Home to the Colosseum and Vatican City
+199;European Cities;London;Capital of the United Kingdom;Has the River Thames and Buckingham Palace
+200;European Cities;Berlin;Capital of Germany;Known for its history and cultural scene
+201;European Cities;Madrid;Capital of Spain;Famous for its vibrant nightlife and art museums
+202;European Cities;Athens;Capital of Greece;Ancient city with historical ruins
+203;European Cities;Lisbon;Capital of Portugal;Located on the coast with colorful tiles
+204;European Cities;Amsterdam;Capital of the Netherlands;Known for its canals and tulips
+205;European Cities;Vienna;Capital of Austria;Famous for classical music and historic architecture
+206;European Cities;Prague;Capital of the Czech Republic;Known for its medieval charm
+207;European Cities;Budapest;Capital of Hungary;Split by the Danube River
+208;European Cities;Stockholm;Capital of Sweden;Located on several islands
+209;European Cities;Oslo;Capital of Norway;Known for its fjords and outdoor activities
+210;European Cities;Copenhagen;Capital of Denmark;Home to the iconic Little Mermaid statue
+211;European Cities;Warsaw;Capital of Poland;Has a mix of modern and historic architecture
+212;European Cities;Dublin;Capital of Ireland;Known for its lively pubs and literary history
+213;European Cities;Brussels;Capital of Belgium;Political hub of the European Union
+214;European Cities;Helsinki;Capital of Finland;Located on the Baltic Sea
+215;European Cities;Reykjavik;Capital of Iceland;Known for its geothermal pools and landscapes
+216;European Cities;Vienna;Capital of Austria;Famous for classical music and historic architecture
+217;European Cities;Paris;Capital of France;Known for the Eiffel Tower
+218;European Cities;Rome;Capital of Italy;Home to the Colosseum and Vatican City
+219;European Cities;London;Capital of the United Kingdom;Has the River Thames and Buckingham Palace
+220;European Cities;Berlin;Capital of Germany;Known for its history and cultural scene
+221;European Cities;Madrid;Capital of Spain;Famous for its vibrant nightlife and art museums
+222;European Cities;Athens;Capital of Greece;Ancient city with historical ruins
+223;European Cities;Lisbon;Capital of Portugal;Located on the coast with colorful tiles
+224;European Cities;Amsterdam;Capital of the Netherlands;Known for its canals and tulips
+225;European Cities;Prague;Capital of the Czech Republic;Known for its medieval charm
+226;European Cities;Budapest;Capital of Hungary;Split by the Danube River
+227;European Cities;Stockholm;Capital of Sweden;Located on several islands
+228;European Cities;Oslo;Capital of Norway;Known for its fjords and outdoor activities
+229;European Cities;Copenhagen;Capital of Denmark;Home to the iconic Little Mermaid statue
+230;European Cities;Warsaw;Capital of Poland;Has a mix of modern and historic architecture
+231;European Cities;Dublin;Capital of Ireland;Known for its lively pubs and literary history
+232;European Cities;Brussels;Capital of Belgium;Political hub of the European Union
+233;European Cities;Helsinki;Capital of Finland;Located on the Baltic Sea
+234;European Cities;Reykjavik;Capital of Iceland;Known for its geothermal pools and landscapes
+235;Birds;Eagle;Powerful bird of prey;Often used as a national symbol
+236;Birds;Robin;Small songbird;Known for its red breast
+237;Birds;Sparrow;Common small bird;Often found in urban areas
+238;Birds;Hummingbird;Tiny bird with rapid wing beats;Feeds on nectar
+239;Birds;Ostrich;Large flightless bird;Fastest-running bird on land
+240;Birds;Penguin;Flightless bird native to the Southern Hemisphere;Often seen in tuxedo-like plumage
+241;Birds;Albatross;Large seabird with long wingspan;Known for gliding over ocean currents
+242;Birds;Swan;Graceful water bird;Associated with elegance and beauty
+243;Birds;Peacock;Colorful and flamboyant bird;Displays its tail feathers in a fan-like manner
+244;Birds;Owl;Nocturnal bird of prey;Known for its hooting calls
+245;Birds;Flamingo;Tall wading bird;Distinctive pink or orange plumage
+246;Birds;Pigeon;Common city bird;Domesticated breeds used for various purposes
+247;Birds;Hawk;Bird of prey with keen eyesight;Known for its soaring flight
+248;Birds;Cardinal;Songbird with vibrant red plumage;State bird of several U.S. states
+249;Birds;Blue Jay;Bright blue and white bird;Known for its intelligence and calls
+250;Birds;Cuckoo;Songbird known for its distinctive call;Some species are brood parasites
+251;Birds;Seagull;Coastal bird;Often associated with beaches and ocean environments
+252;Birds;Pelican;Large water bird with pouch-like bill;Known for its diving and fishing abilities
+253;Birds;Woodpecker;Bird with specialized beak for drumming on trees;Feeds on insects
+254;Birds;Crow;Black bird known for its intelligence;Often found in urban areas
+255;Birds;Magpie;Black and white bird;Known for its habit of collecting shiny objects
+256;Birds;Parrot;Colorful bird with ability to mimic sounds;Often kept as pets
+257;Birds;Toucan;Large-billed bird native to Central and South America;Symbol of tropical forests
+258;Birds;Swallow;Aerial insectivore with forked tail;Symbolizes the arrival of spring
+259;Birds;Heron;Wading bird with long legs and neck;Often seen near water bodies
+260;Birds;Kiwi;Flightless bird native to New Zealand;Has a long, slender bill
+261;Birds;Raven;Large black bird;Often associated with mythology and mystery
+262;Birds;Mallard;Common duck species;Males have glossy green heads
+263;Birds;Gull;Coastal bird;Known for scavenging food along shorelines
+264;Birds;Condor;Large vulture-like bird;Among the world's largest flying birds
+265;Birds;Quail;Small ground-dwelling bird;Known for its distinctive calls
+266;Birds;Wren;Small songbird with melodious voice;Builds intricate nests
+267;Birds;Canary;Small songbird often kept as a pet;Known for its cheerful singing
+268;Birds;Finch;Small passerine bird;Variety of species with diverse plumage
+269;Birds;Kookaburra;Native to Australia;Known for its distinctive laughing call
+270;Birds;Swift;Aerial bird with rapid flight;Feeds on insects in mid-air
+271;Birds;Egret;Long-legged wading bird;Known for its elegant appearance
+272;Birds;Vulture;Scavenging bird of prey;Cleans up carrion and waste
+273;Birds;Kingfisher;Colorful bird often found near water;Skilled at catching fish
+274;Birds;Blackbird;Songbird with black plumage;Known for its melodic song
+275;Birds;Puffin;Distinctive seabird with colorful beak;Nests in burrows on cliffs
+276;Birds;Tern;Seabird known for its graceful flight;Dives to catch fish
+277;Fish;Goldfish;Popular pet fish;Known for its bright coloration
+278;Fish;Salmon;Commonly consumed fish;Known for its pink flesh
+279;Fish;Tuna;Commercially important fish;Often used in canned products
+280;Fish;Clownfish;Colorful reef fish;Popularized by a famous animated movie
+281;Fish;Cod;Cold-water fish;Used in dishes like fish and chips
+282;Fish;Bass;Freshwater sport fish;Includes species like largemouth and smallmouth bass
+283;Fish;Trout;Popular game fish;Thrives in cold, clear waters
+284;Fish;Sardine;Small oily fish;Often packed in cans for preservation
+285;Fish;Mackerel;Pelagic fish;Rich in omega-3 fatty acids
+286;Fish;Pufferfish;Inflatable fish with toxic spines;Considered a delicacy in some cuisines
+287;Fish;Guppy;Colorful aquarium fish;Known for its vibrant patterns
+288;Fish;Catfish;Bottom-dwelling fish;Known for their whisker-like barbels
+289;Fish;Swordfish;Large predatory fish;Has a distinctive elongated bill
+290;Fish;Shark;Predatory fish with cartilaginous skeleton;Apex predators in the ocean
+291;Fish;Haddock;Cold-water fish;Closely related to cod
+292;Fish;Barracuda;Predatory fish with sleek body;Known for its sharp teeth
+293;Fish;Carp;Freshwater fish;Domesticated forms include koi and goldfish
+294;Fish;Anchovy;Small forage fish;Used as food and in sauces
+295;Fish;Halibut;Flatfish;Found in both Atlantic and Pacific oceans
+296;Fish;Eel;Snake-like fish;Has both freshwater and marine species
+297;Fish;Sturgeon;Ancient fish known for caviar;Has bony plates on its body
+298;Fish;Flounder;Flatfish with both eyes on one side;Camouflages with its surroundings
+299;Fish;Piranha;Carnivorous fish;Found in South American rivers
+300;Fisk;Pike;Aggressive freshwater predator;Known for its sharp teeth
