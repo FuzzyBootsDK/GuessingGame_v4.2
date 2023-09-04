@@ -9,27 +9,27 @@ namespace GuessingGame_v4._2
     internal class Game
     {
         private LogGamePlay _logGamePlay;
-        private string _category;
-        private string _answer;
-        private string? _guess;
-        private string _hint1;
-        private string _hint2;
-        private int _numGuesses;
-        private int _maxGuesses;
-        private bool _gameOver;
-        private int _lengthOfAnswer;
-        private char _firstLetterOfAnswer;
-        private int _whenToGetHint1;
-        private int _whenToGetHint2;
-        private string _hint1Recieved;
-        private string _hint2Recieved;
-        private bool _playAgain;
-        private string? _userName;
+        private string _category = "";
+        private string _answer = "";
+        private string _guess = "";
+        private string _hint1 = "";
+        private string _hint2 = "";
+        private int _numGuesses = 0;
+        private int _maxGuesses = 0;
+        private bool _gameOver = false;
+        private int _lengthOfAnswer = 0;
+        private char _firstLetterOfAnswer = '_';
+        private int _whenToGetHint1 = 0;
+        private int _whenToGetHint2 = 0;
+        private string _hint1Recieved = "";
+        private string _hint2Recieved = "";
+        private bool _playAgain = true;
+        private string? _userName = "Guest";
         private string _filePath;
-        private int _NumberOfCorrectGuesses;
-        private string _difficultyName;
-        private int _difficultyLevel;
-        private int _guessesLeftForNextLevel;
+        private int _NumberOfCorrectGuesses = 0;
+        private string _difficultyName = "Beginner";
+        private int _difficultyLevel = 1;
+        private int _guessesLeftForNextLevel = 5;
         public bool PlayAgain { get => _playAgain; }
         public string? UserName { get => _userName; }
         public string FilePath { get => _filePath; }
@@ -77,7 +77,7 @@ namespace GuessingGame_v4._2
             _filePath = filePath;
             _userName = userName;
             _category = category;
-            _answer = answer;
+            _answer = answer.ToUpper();
             _hint1 = hint1;
             _hint2 = hint2;
             _difficultyLevel = difficultyLevel;
@@ -123,6 +123,7 @@ namespace GuessingGame_v4._2
                 Console.WriteLine("What is your guess?");
                 _guess = Console.ReadLine();
                 _logGamePlay.WriteGuess(_guess, _answer, _filePath);
+                _guess = _guess.ToUpper();
                 _numGuesses += 1;
                 IsGameOver();
             }
