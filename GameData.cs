@@ -14,11 +14,11 @@ namespace GuessingGame_v4._2
         private string _difficultyLevelName = string.Empty;
         private int _numberOfCorrectGuesses = 0;
         private int _difficultyCalcMinValue = 1;
-        private int _difficultyCalcMaxValue = 21;
+        private int _difficultyCalcMaxValue = 41;
         private int _randomNumber = 1;
         private string _userName = string.Empty;
 
-        private List<SaveDataModel> _loadSaveData;
+        private List<SaveDataModel>? _loadSaveData;
         private List<GameDataModel> _data;
         public List<GameDataModel> Data { get => _data; }
         public int RamdomNumber { get => _randomNumber; }
@@ -54,7 +54,6 @@ namespace GuessingGame_v4._2
             }
             else
             {
-                _difficultyLevel = _difficultyLevel;
                 SetDifficultyLevel(_difficultyLevel);
             }
         }
