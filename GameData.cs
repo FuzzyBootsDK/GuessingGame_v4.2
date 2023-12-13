@@ -118,7 +118,7 @@ namespace GuessingGame_v4._2
                 _randomNumber = RandomNumber.NewRandomNumber(_difficultyCalcMinValue, _difficultyCalcMaxValue);
             }
         }
-        private  void LoadGame(string userName)
+        private void LoadGame(string userName)
         {
             string loadFilePath = Path.Combine(Directory.GetCurrentDirectory(), "SaveGame.csv");
             using var reader = new StreamReader(loadFilePath);
@@ -133,7 +133,7 @@ namespace GuessingGame_v4._2
             {
                 if (item.UserName == userName)
                 {
-                    _difficultyLevel = item.DifficultyLevel;
+                    _difficultyLevel = (int)item.DifficultyLevel;
                     SetDifficultyLevel(_difficultyLevel);
                 }
             }

@@ -8,8 +8,8 @@ namespace GuessingGame_v4._2
 {
     internal class SaveDataModel
     {
-        public string UserName { get; set; }
-        public int DifficultyLevel { get; set; }
+        public string? UserName { get; set; }
+        public int? DifficultyLevel { get; set; }
 
     }
 }
