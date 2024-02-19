@@ -70,49 +70,49 @@ namespace GuessingGame_v4._2
             }
             else if (_difficultyLevel == 2)
             {
-                //Generate a randomNumber between 41 - 80
+                //Generate a randomNumber between 41 - 76
                 _difficultyLevelName = "Moderate";
                 _difficultyCalcMinValue = 41;
-                _difficultyCalcMaxValue = 80;
+                _difficultyCalcMaxValue = 76;
                 _randomNumber = RandomNumber.NewRandomNumber(_difficultyCalcMinValue, _difficultyCalcMaxValue);
             }
             else if (_difficultyLevel == 3)
             {
-                //Generate a randomNumber between 81 - 120
+                //Generate a randomNumber between 77 - 117
                 _difficultyLevelName = "Advanced";
-                _difficultyCalcMinValue = 81;
-                _difficultyCalcMaxValue = 120;
+                _difficultyCalcMinValue = 77;
+                _difficultyCalcMaxValue = 117;
                 _randomNumber = RandomNumber.NewRandomNumber(_difficultyCalcMinValue, _difficultyCalcMaxValue);
             }
             else if (_difficultyLevel == 4)
             {
-                //Generate a randomNumber between 121 - 160
+                //Generate a randomNumber between 118 - 156
                 _difficultyLevelName = "Skilled";
-                _difficultyCalcMinValue = 121;
-                _difficultyCalcMaxValue = 160;
+                _difficultyCalcMinValue = 118;
+                _difficultyCalcMaxValue = 156;
                 _randomNumber = RandomNumber.NewRandomNumber(_difficultyCalcMinValue, _difficultyCalcMaxValue);
             }
             else if (_difficultyLevel == 5)
             {
-                //Generate a randomNumber between 161 - 200
+                //Generate a randomNumber between 157 - 196
                 _difficultyLevelName = "Hardcore";
-                _difficultyCalcMinValue = 161;
-                _difficultyCalcMaxValue = 200;
+                _difficultyCalcMinValue = 157;
+                _difficultyCalcMaxValue = 196;
                 _randomNumber = RandomNumber.NewRandomNumber(_difficultyCalcMinValue, _difficultyCalcMaxValue);
             }
             else if (_difficultyLevel == 6)
             {
-                //Generate a randomNumber between 201 - 240
+                //Generate a randomNumber between 197 - 234
                 _difficultyLevelName = "Nightmare";
-                _difficultyCalcMinValue = 201;
-                _difficultyCalcMaxValue = 240;
+                _difficultyCalcMinValue = 197;
+                _difficultyCalcMaxValue = 234;
                 _randomNumber = RandomNumber.NewRandomNumber(_difficultyCalcMinValue, _difficultyCalcMaxValue);
             }
             else
             {
-                //Generate a randomNumber between 241 - 300
+                //Generate a randomNumber between 235 - 300
                 _difficultyLevelName = "Legendary";
-                _difficultyCalcMinValue = 241;
+                _difficultyCalcMinValue = 235;
                 _difficultyCalcMaxValue = 300;
                 _randomNumber = RandomNumber.NewRandomNumber(_difficultyCalcMinValue, _difficultyCalcMaxValue);
             }
@@ -120,47 +120,95 @@ namespace GuessingGame_v4._2
         private void LoadGame(string userName)
         {
             string loadFilePath = Path.Combine(Directory.GetCurrentDirectory(), "SaveGame.csv");
-            using var reader = new StreamReader(loadFilePath);
-            var csvConfig = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture)
+
+            // Check if the file exists before attempting to load it
+            if (File.Exists(loadFilePath))
             {
-                Delimiter = ";",
-                HasHeaderRecord = true,
-            };
-            using var loadSaveGame = new CsvReader(reader, csvConfig);
-            _loadSaveData = loadSaveGame.GetRecords<SaveDataModel>().ToList();
-            foreach (var item in _loadSaveData)
-            {
-                if (item.UserName == userName)
+                using var reader = new StreamReader(loadFilePath);
+                var csvConfig = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture)
                 {
-                    _difficultyLevel = (int)item.DifficultyLevel;
-                    SetDifficultyLevel(_difficultyLevel);
+                    Delimiter = ";",
+                    HasHeaderRecord = true,
+                };
+
+                using var loadSaveGame = new CsvReader(reader, csvConfig);
+                _loadSaveData = loadSaveGame.GetRecords<SaveDataModel>().ToList();
+
+                foreach (var item in _loadSaveData)
+                {
+                    if (item.UserName == userName)
+                    {
+                        _difficultyLevel = (int)item.DifficultyLevel;
+                        SetDifficultyLevel(_difficultyLevel);
+                        return; // Exit the loop if the user is found
+                    }
                 }
+
+                // Handle the case where the specified user is not found in the file
+                Console.WriteLine($"User '{userName}' not found in SaveGame.csv");
+            }
+            else
+            {
+                // Handle the case where the file doesn't exist
+                Console.WriteLine("SaveGame.csv does not exist. Creating the file with header.");
+
+                // Create the file with the header
+                using var writer = new StreamWriter(loadFilePath);
+                var csvConfig = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture)
+                {
+                    Delimiter = ";",
+                    HasHeaderRecord = true,
+                };
+                using var saveGame = new CsvWriter(writer, csvConfig);
+
+                saveGame.WriteField("UserName");
+                saveGame.WriteField("DifficultyLevel");
+                saveGame.NextRecord();
+
+                _loadSaveData = new List<SaveDataModel>();
             }
         }
         public void SaveGame(string userName, int difficultyLevel)
         {
             List<SaveDataModel> data = new List<SaveDataModel>();
             List<SaveDataModel> existingData;
+
             data.Add(new SaveDataModel { UserName = userName, DifficultyLevel = difficultyLevel });
+
             string saveFilePath = Path.Combine(Directory.GetCurrentDirectory(), "SaveGame.csv");
+
             var csvConfig = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 Delimiter = ";",
                 HasHeaderRecord = true,
             };
+
             if (File.Exists(saveFilePath))
             {
+                // If the file already exists, read existing data
                 using var reader = new StreamReader(saveFilePath);
                 using var csv = new CsvReader(reader, csvConfig);
                 existingData = csv.GetRecords<SaveDataModel>().ToList();
             }
             else
             {
+                // If the file doesn't exist, create it with the header
+                StreamWriter streamWriter = new StreamWriter(saveFilePath);
+                using var writerSave = streamWriter;
+                using var saveGameWriter = new CsvWriter(writerSave, csvConfig);
+
+                saveGameWriter.WriteField("UserName");
+                saveGameWriter.WriteField("DifficultyLevel");
+                saveGameWriter.NextRecord();
+
                 existingData = new List<SaveDataModel>();
             }
-            existingData.Add(new SaveDataModel { UserName = userName, DifficultyLevel = difficultyLevel });
-            using var writer = new StreamWriter(saveFilePath);
 
+            // Add the new data to the existing data
+            existingData.Add(new SaveDataModel { UserName = userName, DifficultyLevel = difficultyLevel });
+
+            // Write all data (including the new one) back to the file
+            using var writer = new StreamWriter(saveFilePath);
             using var saveGame = new CsvWriter(writer, csvConfig);
 
             saveGame.WriteRecords(existingData);

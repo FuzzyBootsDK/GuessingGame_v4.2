@@ -3,18 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33927.249
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGame_v4.2", "GuessingGame_v4.2.csproj", "{D3355235-502C-43B5-A496-413940C82BDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuessingGame_v4.2", "GuessingGame_v4.2.csproj", "{D3355235-502C-43B5-A496-413940C82BDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM64 = Debug|ARM64
 		Release|Any CPU = Release|Any CPU
+		Release|ARM64 = Release|ARM64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D3355235-502C-43B5-A496-413940C82BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3355235-502C-43B5-A496-413940C82BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3355235-502C-43B5-A496-413940C82BDD}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{D3355235-502C-43B5-A496-413940C82BDD}.Debug|ARM64.Build.0 = Debug|ARM64
 		{D3355235-502C-43B5-A496-413940C82BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3355235-502C-43B5-A496-413940C82BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3355235-502C-43B5-A496-413940C82BDD}.Release|ARM64.ActiveCfg = Release|ARM64
+		{D3355235-502C-43B5-A496-413940C82BDD}.Release|ARM64.Build.0 = Release|ARM64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
